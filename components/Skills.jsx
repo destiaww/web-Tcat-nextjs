@@ -14,7 +14,7 @@ const Skills = () => {
     <div id='skills' className='w-full lg:h-screen p-2'>
       <div className='max-w-[1240px] mx-auto flex flex-col justify-center h-full'>
         <h2 className='flex justify-center py-4'>Bisa Apa Aja si?</h2>
-        <p className='py-4 text-gray-600 sm:max-w-[70%] m-auto'>disclaimer masi belajar kokk hihiii</p>
+        <p className='py-4 text-gray-600 sm:max-w-[70%] justify-center m-auto'>disclaimer masi belajar kokk hihiii</p>
         <div className='grid grid-cols-2 lg:grid-cols-4 gap-8'>
           <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
             <div className='grid gap-4 justify-center items-center'>

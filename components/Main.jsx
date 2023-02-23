@@ -28,7 +28,7 @@ const Main = () => {
               </div>
             </a>
             <a
-              href="https://github.com/fireclint"
+              href="https://github.com/destiaww"
               target="_blank"
               rel="noreferrer"
             >

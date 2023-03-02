@@ -1,22 +1,21 @@
 import Head from 'next/head'
 import About from '../components/About'
 import Main from '../components/Main'
-import Projects from '../components/Projects'
-import Skills from '../components/Skills'
+import Event from '../components/Event'
+
 
 
 export default function Home() {
   return (
-    <div>
+    <div className='bg-black w-full'>
       <Head>
-        <title>BoutD  |  tefa FE</title>
-        <meta name="description" content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences." />
+        <title>Tcat  |  Ticketing</title>
+        <meta name="description" content="book ur ticket now" />
         <link rel="icon" href="/fav.png" />
       </Head>
     <Main />
-    <About />
-    <Skills />
-    <Projects />
+    <About/>
+    <Event />
     </div>
   )
 }

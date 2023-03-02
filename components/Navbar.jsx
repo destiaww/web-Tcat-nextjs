@@ -49,7 +49,7 @@ const Navbar = () => {
             />
           </a>
         </Link>
-        <div>
+        <div className="w-full flex justify-center">
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/">Home</Link>
@@ -58,20 +58,34 @@ const Navbar = () => {
               <Link href="/#about">About</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#skills">Skills</Link>
-            </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#projects">Projects</Link>
+              <Link href="/#event">Event</Link>
             </li>
           </ul>
+
           {/* Hamburger Icon */}
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className="md:hidden"
-          >
+            className="md:hidden">
             <AiOutlineMenu size={25} />
           </div>
+
+        </div>
+        <div className="items-center flex-shrink-0 hidden lg:flex ">
+        <button
+          type="button"
+          className="px-5 py-2 font-semibold self-center mr-5
+          bg-slate-400 
+          dark:text-gray-800 ">
+          <Link href="/#loginpage">Sign In</Link>
+        </button>
+        <button
+          type="button"
+          className="px-5 py-2 font-semibold self-center
+          bg-slate-400 
+          dark:text-gray-800">
+          <Link href="/#daftarpage">Sign Up</Link>
+        </button>
         </div>
       </div>
 
@@ -104,8 +118,7 @@ const Navbar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-300 my-4">
-            </div>
+            <div className="border-b border-gray-300 my-4"></div>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
@@ -119,24 +132,28 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link href="/#event">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Skills
+                  Event
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link href="/#loginpage">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Portofolio
+                  Sign In
                 </li>
               </Link>
+              <Link href="/#daftarpage">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Sign Up
+                </li>
+              </Link>
+              
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
-                Let's Connect
-              </p>
+            <p className="font-semibold text-slate-400">Lets Connect</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <a
-                  href="https://www.linkedin.com/in/clint-briley-50056920a/"
+                  href=""
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -154,7 +171,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href="https://instagram.com/destiawll?igshid=ZDdkNTZiNTM="
+                  href="https://instagram.com/destiawll"
                   target="_blank"
                   rel="noreferrer"
                 >

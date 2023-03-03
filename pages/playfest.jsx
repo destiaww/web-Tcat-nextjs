@@ -79,7 +79,7 @@ const playfest = () => {
               <BsFillPlusCircleFill />
             </button>
             <h1 className="text-sm ml-4 mr-4">{count}</h1>
-            <button onClick={decrementCount} className="mr-2">
+            <button onClick={decrementCount} className="mr-2" disabled={count <= 0}>
               <AiFillMinusCircle />
             </button>
             <button onClick={resetCount}>

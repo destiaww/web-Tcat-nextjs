@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { AiFillDelete } from "react-icons/ai";
+import {TiDelete} from "react-icons/ti";
 import { AiFillMinusCircle } from "react-icons/ai";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import pestaporaImg from "../public/assets/event/pestapora.jpeg";
@@ -73,16 +73,16 @@ const pestapora = () => {
         </div>
         <div className="">
           <div className="flex justify-center items-center">
-            <div className="{incrementCount}">
+            <button onClick={incrementCount}>
               <BsFillPlusCircleFill />
-            </div>
+            </button>
             <h1 className="text-sm ml-4 mr-4">{count}</h1>
-            <div className="mr-2 {decrementCount}">
+            <button onClick={decrementCount} className="mr-2" disabled={count <= 0}>
               <AiFillMinusCircle />
-            </div>
-            <div className="{resetCount}">
-              <AiFillDelete />
-            </div>
+            </button>
+            <button onClick={resetCount}>
+              <TiDelete />
+            </button>
              
             </div>
           </div>

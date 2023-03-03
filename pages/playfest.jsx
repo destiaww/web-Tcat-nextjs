@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { AiFillDelete } from "react-icons/ai";
+import { TiDelete } from "react-icons/ti";
 import { AiFillMinusCircle } from "react-icons/ai";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import { RiRadioButtonFill } from "react-icons/ri";
@@ -75,17 +75,18 @@ const playfest = () => {
         </div>
         <div className="">
           <div className="flex justify-center items-center">
-            <div className="{incrementCount}">
+            <button onClick={incrementCount}>
               <BsFillPlusCircleFill />
-            </div>
+            </button>
             <h1 className="text-sm ml-4 mr-4">{count}</h1>
-            <div className="mr-2 {decrementCount}">
+            <button onClick={decrementCount} className="mr-2">
               <AiFillMinusCircle />
-            </div>
-            <div className="{resetCount}">
-              <AiFillDelete />
-            </div>
-              </div>
+            </button>
+            <button onClick={resetCount}>
+              <TiDelete />
+            </button>
+             
+          </div>
       </div>
     </div>
     </div>

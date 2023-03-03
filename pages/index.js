@@ -7,7 +7,7 @@ import Event from '../components/Event'
 
 export default function Home() {
   return (
-    <div className='bg-black w-full'>
+    <div className='bg-gray-900 w-full'>
       <Head>
         <title>Tcat  |  Ticketing</title>
         <meta name="description" content="book ur ticket now" />

@@ -4,7 +4,7 @@ import React from 'react'
 
 const EventItem = ({title, backgroundImg, tech, EventUrl}) => {
   return (
-    <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-gray-200 rounded-xl bg-gray-400 group hover:bg-gradient-to-r from-[#716F81] to-[#393E46]'>
+    <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-[#f99471] rounded-xl bg-[e4c988] group hover:bg-gradient-to-r from-[#F99417] to-[#E4C988]'>
     <Image className='rounded-xl group-hover:opacity-10' src={backgroundImg} alt='/' /> 
     <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
         <h3 className='text-2xl text-white tracking-wider text-center'>{title}</h3>

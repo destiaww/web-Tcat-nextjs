@@ -9,7 +9,7 @@ const Main = () => {
 		  </div>
         <div>
           <h1 className="pt-10 py-2 text-white" >
-            Welcome to <span className="text-[#B0C4DE]">Tcat</span>
+            Welcome to <span className="text-[#e6a85c]">Tcat</span>
           </h1>
           <h1 className="py-2 text-white">
            Fun and Event
@@ -18,7 +18,7 @@ const Main = () => {
             pengen ikutan event, nonton konser, tapi bingung war tiket? tcat is here
           </p>
           <div className="flex pt-10 items-center justify-center max-w-[330px] m-auto py-4">
-              <div className="bg-gray-500 rounded-full shadow-md shadow-gray-300 px-10 py-4 cursor-pointer hover:scale-110 ease-in duration-300 font-semibold text-white">
+              <div className="bg-gradient-to-r from-[#F99417] to-[#E4C988] rounded-full shadow-md shadow-[#F99417] px-10 py-4 cursor-pointer hover:scale-110 ease-in duration-300 font-semibold text-white">
                <Link href="/#event">check event!</Link>
               </div>
           </div>

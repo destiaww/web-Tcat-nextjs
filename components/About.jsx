@@ -14,7 +14,7 @@ const About = () => {
 					<h3 className="text-3xl text-white font-semibold">Tcat</h3>
 					<span className="text-sm font-semibold tracking-wider  text-white">Apa dan Bagaimana?</span>
 					<div className="pt-6">
-					<div className='bg-gray-500 w-55 h-auto m-auto shadow-lg shadow-gray-300 rounded-3xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300'>
+					<div className='bg-gradient-to-r from-[#F99417] to-[#E4C988] tow-55 h-auto m-auto shadow-md shadow-[#F99417] rounded-3xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300'>
 						<Image src={ticketImg} className='rounded-xl' alt='/' />
 					</div>
 					</div>

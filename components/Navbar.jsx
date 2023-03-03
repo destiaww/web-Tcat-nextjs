@@ -75,14 +75,14 @@ const Navbar = () => {
         <button
           type="button"
           className="px-5 py-2 font-semibold self-center mr-5
-          bg-slate-400 
+          bg-gradient-to-r from-[#F99417] to-[#E4C988]
           dark:text-gray-800 ">
           <Link href="/#loginpage">Sign In</Link>
         </button>
         <button
           type="button"
           className="px-5 py-2 font-semibold self-center
-          bg-slate-400 
+          bg-gradient-to-r from-[#F99417] to-[#E4C988]
           dark:text-gray-800">
           <Link href="/#daftarpage">Sign Up</Link>
         </button>

@@ -22,7 +22,7 @@ const pestapora = () => {
     setCount(0);
   };
   return (
-    <div className="w-full bg-black">
+    <div className="w-full bg-gray-900">
       <div className="w-screen h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
         <Image
@@ -52,7 +52,7 @@ const pestapora = () => {
             voluptatem ab in, dolor accusantium, quam vitae fugiat esse. Saepe.
           </p>
         </div>
-        <div className="bg-gray-500 col-span-4 md:col-span-1 shadow-lg shadow-gray-300 rounded-xl py-4 text-white ">
+        <div className="bg-gradient-to-r from-[#F99417] to-[#E4C988] col-span-4 md:col-span-1 shadow-md shadow-[#f99417] rounded-xl py-4 text-white ">
           <div className="p-2">
             <p className="text-center font-bold pb-2">Detail Of Event</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
@@ -66,25 +66,29 @@ const pestapora = () => {
             </div>
           </div>
         </div>
-        <div className="flex">
-          <div classname="flex">
-          <button onClick={incrementCount}>
+        <div>
+        <div className="bg-gradient-to-r from-[#F99417] to-[#E4C988] rounded-full shadow-sm shadow-[#F99417] px-2 py-2 cursor-pointer hover:scale-110 ease-in duration-300 font-semibold text-white">
+                <Link href="/#event">back</Link>
+              </div>
+        </div>
+        <div className="">
+          <div className="flex justify-center items-center">
+            <div className="{incrementCount}">
               <BsFillPlusCircleFill />
-            </button>
-            <h1>{count}</h1>
-            <button onClick={decrementCount}>
+            </div>
+            <h1 className="text-sm ml-4 mr-4">{count}</h1>
+            <div className="mr-2 {decrementCount}">
               <AiFillMinusCircle />
-            </button>
-            <button onClick={resetCount}>
+            </div>
+            <div className="{resetCount}">
               <AiFillDelete />
-            </button>
+            </div>
+             
+            </div>
           </div>
         </div>
-        <Link href="/#event">
-          <p className="underline cursor-pointer">Back</p>
-        </Link>
       </div>
-    </div>
+
   );
 };
 

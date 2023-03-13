@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {TiDelete} from "react-icons/ti";
+import { TiDelete } from "react-icons/ti";
 import { AiFillMinusCircle } from "react-icons/ai";
 import { BsFillPlusCircleFill } from "react-icons/bs";
 import pestaporaImg from "../public/assets/event/pestapora.jpeg";
@@ -7,7 +7,7 @@ import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import React, { useState } from "react";
 
-const pestapora = () => {
+const Pestapora = () => {
   const [count, setCount] = useState(0);
 
   const incrementCount = () => {
@@ -67,9 +67,9 @@ const pestapora = () => {
           </div>
         </div>
         <div>
-        <div className="bg-gradient-to-r from-[#F99417] to-[#E4C988] rounded-full shadow-sm shadow-[#F99417] px-2 py-2 cursor-pointer hover:scale-110 ease-in duration-300 font-semibold text-white">
-                <Link href="/#event">back</Link>
-              </div>
+          <div className="bg-gradient-to-r from-[#F99417] to-[#E4C988] rounded-full shadow-sm shadow-[#F99417] px-2 py-2 cursor-pointer hover:scale-110 ease-in duration-300 font-semibold text-white">
+            <Link href="/#event">back</Link>
+          </div>
         </div>
         <div className="">
           <div className="flex justify-center items-center">
@@ -77,19 +77,21 @@ const pestapora = () => {
               <BsFillPlusCircleFill />
             </button>
             <h1 className="text-sm ml-4 mr-4">{count}</h1>
-            <button onClick={decrementCount} className="mr-2" disabled={count <= 0}>
+            <button
+              onClick={decrementCount}
+              className="mr-2"
+              disabled={count <= 0}
+            >
               <AiFillMinusCircle />
             </button>
             <button onClick={resetCount}>
               <TiDelete />
             </button>
-             
-            </div>
           </div>
         </div>
       </div>
-
+    </div>
   );
 };
 
-export default pestapora;
+export default Pestapora;

@@ -2,6 +2,7 @@ import Head from 'next/head'
 import About from '../components/About'
 import Main from '../components/Main'
 import Event from '../components/Event'
+import loginpage from '../components/loginpage'
 
 
 
@@ -17,5 +18,5 @@ export default function Home() {
     <About/>
     <Event />
     </div>
-  )
+  ) 
 }

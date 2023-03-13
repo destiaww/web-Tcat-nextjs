@@ -77,7 +77,7 @@ const Navbar = () => {
           className="px-5 py-2 font-semibold self-center mr-5
           bg-gradient-to-r from-[#F99417] to-[#E4C988]
           dark:text-gray-800 ">
-          <Link href="/#loginpage">Sign In</Link>
+          <Link href="/#login">Sign In</Link>
         </button>
         <button
           type="button"
@@ -137,7 +137,7 @@ const Navbar = () => {
                   Event
                 </li>
               </Link>
-              <Link href="/#loginpage">
+              <Link href="/#login">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Sign In
                 </li>
